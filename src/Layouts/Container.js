@@ -18,6 +18,7 @@ export const Container = () => {
                     type="checkbox" 
                     onChange={(event) => setChecked(event.target.checked)}
                     checked={checked}
+                    aria-label="display monthly or yearly packages"
                 />
                 <span>Monthly</span>
             </div>
