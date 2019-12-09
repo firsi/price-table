@@ -1,0 +1,41 @@
+.title{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.price-container{
+    margin: 1em auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-container .currency{
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: 1.8em;
+}
+
+.price-container .price{
+    font-size: 3.5em;
+    font-weight: 700;
+}
+.table .content{
+    margin-bottom: 10%;
+}
+
+.table .content p{
+    font-size: 1em;
+    font-weight: 700;
+    color: inherit;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsl(234, 14%, 74%);
+    margin-top: 0px;
+    margin-bottom:  0px;
+}
+
+.table .content p:nth-child(1){
+    border-top: 1px solid hsl(234, 14%, 74%);
+}
+

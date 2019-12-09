@@ -1,0 +1,80 @@
+:root{
+  --light-grayish-blue: hsl(234, 14%, 74%);
+  --grayish-blue: hsl(233, 13%, 49%);
+  --dark-grayish-blue:  hsl(232, 13%, 33%);
+}
+
+.App{
+  height: 100vh;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+
+  .bg-top, .bg-bottom{
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .bg-top{
+    right: 0;
+  }
+  .bg-bottom{
+    left: 0;
+    bottom: 0;
+  }
+  .switch-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light-grayish-blue);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-bottom: 2em;
+
+    input{
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  }
+
+  .prices-container{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &>div:nth-child(2){
+     margin-top:0;
+     margin-bottom: 0;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+    }
+    
+  }
+}
+
+@media screen and (max-width: 468px){
+  .container{
+    .bg-top{
+      right: -210px;
+    }
+    .bg-bottom{
+      display: none;
+    }
+
+    .prices-container>div:nth-child(2){
+        
+    }
+  }
+}
+
+
